@@ -1,0 +1,150 @@
+tasks for me
+
+Target year: 2014 needs to be added
+2nd step
+
+D:\AskIITians\Websites\AskIITians\HomePage.aspx
+D:\AskIITians\Websites\AskIITians\myaccount.aspx
+D:\AskIITians\Websites\AskIITians\free-lessons-for-iit-jee.aspx
+D:\AskIITians\Websites\AskIITians\CrashCourse.aspx.cs
+D:\AskIITians\Websites\AskIITians\CrashCourse.aspx
+D:\AskIITians\Websites\AskIITians\CoachingNRIStudents.aspx
+D:\AskIITians\Websites\AskIITians\CoachingNRIStudents.aspx.cs
+D:\AskIITians\Websites\AskIITians\IitJeeTestSeries.aspx
+D:\AskIITians\Websites\AskIITians\Handler\BlogQuestionHandler.ashx
+D:\AskIITians\Websites\AskIITians\SecondStep.ascx
+D:\AskIITians\Websites\AskIITians\myaccount\my-account.aspx
+D:\AskIITians\Websites\AskIITians\myaccount\my-account.aspx.cs
+D:\AskIITians\Websites\AskIITians\SecondStep.ascx.cs
+D:\AskIITians\Websites\AskIITians\Resources\scripts\Widget\EmbeddedQuestionWidget.js
+
+Websites/AskIITians/App_Code/Code/Utilities.cs
+Websites/AskIITians/CoachingNRIStudents.aspx
+Websites/AskIITians/CoachingNRIStudents.aspx.cs
+Websites/AskIITians/CrashCourse.aspx.cs
+Websites/AskIITians/FreeTrial.aspx
+Websites/AskIITians/Handler/BlogQuestionHandler.ashx
+Websites/AskIITians/HomePage.aspx
+Websites/AskIITians/IitJeeTestSeries.aspx
+Websites/AskIITians/Resources/scripts/Widget/EmbeddedQuestionWidget.js
+Websites/AskIITians/SecondStep.ascx
+Websites/AskIITians/SecondStep.ascx.cs
+Websites/AskIITians/UserControl/CoachingNriStudent.ascx
+Websites/AskIITians/UserControl/PostForumQuestion.ascx
+Websites/AskIITians/Web-copy.config
+Websites/AskIITians/WidgetsTemplates/Widget.htm
+Websites/AskIITians/contact-us.aspx.cs
+Websites/AskIITians/forum/ForumQuestion.aspx
+Websites/AskIITians/myaccount/my-account.aspx
+Websites/AskIITians/myaccount/my-account.aspx.cs
+Websites/AskIITians/sales-bms/AskiitiansUserAdmin.aspx
+
+
+http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page2.aspx
+http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page3.aspx
+http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page4.aspx
+http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page5.aspx
+http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page6.aspx
+http://www.askiitians.com/aieee-2009-solutions/Default.aspx
+http://www.askiitians.com/crash-course/Default.aspx
+http://www.askiitians.com/iit-jee-chemistry/inorganic-chemistry/Default.aspx
+http://www.askiitians.com/iit-jee-chemistry/organic-chemistry/alkenes-and-alkynes/Default.aspx
+http://www.askiitians.com/iit-jee-chemistry/organic-chemistry/saturated-hydrocarbons/Default.aspx
+http://www.askiitians.com/iit-jee-chemistry/physical-chemistry/electrochemistry/Default.aspx
+http://www.askiitians.com/iit-jee-chemistry/physical-chemistry/surface-chemistry/Default.aspx
+http://www.askiitians.com/iit-jee-physics/general-physics/Default.aspx
+http://www.askiitians.com/iit-study-material/Default.aspx
+http://www.askiitians.com/iit-study-material/iit-jee-chemistry/Default.aspx
+http://www.askiitians.com/iit-study-material/iit-jee-mathematics/Default.aspx
+http://www.askiitians.com/iit-study-material/iit-jee-mathematics/algebra/Default.aspx
+http://www.askiitians.com/iit-study-material/iit-jee-mathematics/differential-calculus/Default.aspx
+http://www.askiitians.com/iit-study-material/iit-jee-mathematics/integral-calculus/Default.aspx
+http://www.askiitians.com/iit-study-material/iit-jee-physics/Default.aspx
+http://www.askiitians.com/mock-test/Default.aspx
+http://www.askiitians.com/practice-papers/Default.aspx
+http://www.askiitians.com/school-tie-up-program/Default.aspx
+http://www.askiitians.com/Study-Material-Category/Default.aspx
+http://www.askiitians.com/Study-Material-Subcategory/Default.aspx
+http://www.askiitians.com/Study-Material-Topics/Default.aspx
+
+Get keyboard and monitor
+
+check view state
+remove duplicate forum pages make a utility
+
+
+1. Performance of the Discussion forum main page
+2. Responsive Design
+3. Design breaks for sometime on discussion forum main page
+4. In some of the case, country is not getting saved. We have put a patch today but we need to observe it for some more time.
+5. On discussion forum main page, master category tab appears as link which should not be the case.
+6. In some of the cases, registration url is not getting saved.
+
+Caching issue
+check for coockie
+
+pushkar.aditya@expertsland.com,nishant.jain@askiitians.com,rakesh@expertsland.com,nishant.sinha@askiitians.com,aditya.singhal@askiitians.com,nidhi.gupta@expertsland.com,jitender.lakhanpal@askiitians.com,ashish.kumar@askiitians.com,akshay.meena@askiitians.com,ashish.kumar@askiitians.com,yash.baheti@askiitians.com,manish.kumar@askiitians.com,siddharth.arora@askiitians.com,amit.shekhar@askiitians.com,subrat.sagar@askiitians.com,deb@askiitians.com,rakesh.singh@askiitians.com,l.karthikeyan@transwebtutors.com,avinash.kumar@transwebtutors.com,satish.rao@askiitians.com,vikram.singh@askiitians.com,joydeep.saha@askiitians.com,kashif.husain@askiitians.com,dheeraj.kumar@askiitians.com,nishtha.gupta@askiitians.com,abrar.shaikh@askiitians.com,bibin.daniel@askiitians.com,ashish.mohan@askiitians.com,nitin.srivastava@askiitians.com,monika.rai@askiitians.com,avinash.singh@askiitians.com,alok.singh@askiitians.com,chandan.singh@askiitians.com,vaibhav.singhal@askiitians.com
+
+
+random tasks
+3. User data migration
+
+
+Exisiting problems
+
+Estimation
+Many of the pages are showing problem from KYS sheet
+New Template mailing
+
+
+Ask IITians
+Caching on pages
+
+
+personal
+using Nuget PM for dependancy
+
+
+Sitemap generator tool
+
+tutor management
+1. clicking on question will open new page and post answer will take user to question page
+2. paging size has to be increased to 25
+
+
+Done by me
+1. tutor management changes
+2. working on generating sitemap (need to know appropriate time)
+3. has to deploy the changes Nidhi has done for clicking
+
+
+
+
+
+
+
+
+
+
+package content upload
+-- updated except package id 8
+go iit images
+QA service installation
+-- QA service installed however amazon credentials has to be encrypted
+Blog sitemap xml
+
+Preparing data for email
+query for rakesh
+
+
+
+301 implementation
+question insertion from avinash, ask question contest
+-- error row 1718 name is not appropriate
+
+
+
+http://www.askiitians.com/packages/ -- set default page
+CMS page changes
+blog ka sitemap
+Cloud Berry: default settings for public acl -- done
