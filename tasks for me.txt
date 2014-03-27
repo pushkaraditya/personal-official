@@ -1,71 +1,13 @@
 tasks for me
 
+registration url is not getting recorded from forum main and forum category pages
+sales bms pages url needs to be corrected
+Question page should redirect to 404 page in case question is is not found or inactive
+
+
 Target year: 2014 needs to be added
 2nd step
 
-D:\AskIITians\Websites\AskIITians\HomePage.aspx
-D:\AskIITians\Websites\AskIITians\myaccount.aspx
-D:\AskIITians\Websites\AskIITians\free-lessons-for-iit-jee.aspx
-D:\AskIITians\Websites\AskIITians\CrashCourse.aspx.cs
-D:\AskIITians\Websites\AskIITians\CrashCourse.aspx
-D:\AskIITians\Websites\AskIITians\CoachingNRIStudents.aspx
-D:\AskIITians\Websites\AskIITians\CoachingNRIStudents.aspx.cs
-D:\AskIITians\Websites\AskIITians\IitJeeTestSeries.aspx
-D:\AskIITians\Websites\AskIITians\Handler\BlogQuestionHandler.ashx
-D:\AskIITians\Websites\AskIITians\SecondStep.ascx
-D:\AskIITians\Websites\AskIITians\myaccount\my-account.aspx
-D:\AskIITians\Websites\AskIITians\myaccount\my-account.aspx.cs
-D:\AskIITians\Websites\AskIITians\SecondStep.ascx.cs
-D:\AskIITians\Websites\AskIITians\Resources\scripts\Widget\EmbeddedQuestionWidget.js
-
-Websites/AskIITians/App_Code/Code/Utilities.cs
-Websites/AskIITians/CoachingNRIStudents.aspx
-Websites/AskIITians/CoachingNRIStudents.aspx.cs
-Websites/AskIITians/CrashCourse.aspx.cs
-Websites/AskIITians/FreeTrial.aspx
-Websites/AskIITians/Handler/BlogQuestionHandler.ashx
-Websites/AskIITians/HomePage.aspx
-Websites/AskIITians/IitJeeTestSeries.aspx
-Websites/AskIITians/Resources/scripts/Widget/EmbeddedQuestionWidget.js
-Websites/AskIITians/SecondStep.ascx
-Websites/AskIITians/SecondStep.ascx.cs
-Websites/AskIITians/UserControl/CoachingNriStudent.ascx
-Websites/AskIITians/UserControl/PostForumQuestion.ascx
-Websites/AskIITians/Web-copy.config
-Websites/AskIITians/WidgetsTemplates/Widget.htm
-Websites/AskIITians/contact-us.aspx.cs
-Websites/AskIITians/forum/ForumQuestion.aspx
-Websites/AskIITians/myaccount/my-account.aspx
-Websites/AskIITians/myaccount/my-account.aspx.cs
-Websites/AskIITians/sales-bms/AskiitiansUserAdmin.aspx
-
-
-http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page2.aspx
-http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page3.aspx
-http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page4.aspx
-http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page5.aspx
-http://www.askiitians.com/aieee-papers/aieee-2008-physics-solutions-page6.aspx
-http://www.askiitians.com/aieee-2009-solutions/Default.aspx
-http://www.askiitians.com/crash-course/Default.aspx
-http://www.askiitians.com/iit-jee-chemistry/inorganic-chemistry/Default.aspx
-http://www.askiitians.com/iit-jee-chemistry/organic-chemistry/alkenes-and-alkynes/Default.aspx
-http://www.askiitians.com/iit-jee-chemistry/organic-chemistry/saturated-hydrocarbons/Default.aspx
-http://www.askiitians.com/iit-jee-chemistry/physical-chemistry/electrochemistry/Default.aspx
-http://www.askiitians.com/iit-jee-chemistry/physical-chemistry/surface-chemistry/Default.aspx
-http://www.askiitians.com/iit-jee-physics/general-physics/Default.aspx
-http://www.askiitians.com/iit-study-material/Default.aspx
-http://www.askiitians.com/iit-study-material/iit-jee-chemistry/Default.aspx
-http://www.askiitians.com/iit-study-material/iit-jee-mathematics/Default.aspx
-http://www.askiitians.com/iit-study-material/iit-jee-mathematics/algebra/Default.aspx
-http://www.askiitians.com/iit-study-material/iit-jee-mathematics/differential-calculus/Default.aspx
-http://www.askiitians.com/iit-study-material/iit-jee-mathematics/integral-calculus/Default.aspx
-http://www.askiitians.com/iit-study-material/iit-jee-physics/Default.aspx
-http://www.askiitians.com/mock-test/Default.aspx
-http://www.askiitians.com/practice-papers/Default.aspx
-http://www.askiitians.com/school-tie-up-program/Default.aspx
-http://www.askiitians.com/Study-Material-Category/Default.aspx
-http://www.askiitians.com/Study-Material-Subcategory/Default.aspx
-http://www.askiitians.com/Study-Material-Topics/Default.aspx
 
 Get keyboard and monitor
 
@@ -148,3 +90,49 @@ http://www.askiitians.com/packages/ -- set default page
 CMS page changes
 blog ka sitemap
 Cloud Berry: default settings for public acl -- done
+
+
+
+
+
+cleaning up url mapper
+-- same url
+SELECT UrlMapperID, NewUrl, OldUrl
+FROM askiiti_askiitians.CMS_UrlMapper culprit
+WHERE NewUrl = OldUrl
+-- resolution same url
+DELETE FROM askiiti_askiitians.CMS_UrlMapper culprit
+WHERE NewUrl = OldUrl
+
+-- 2 step circular points
+SELECT victim.OldUrl, victim.NewUrl, culprit.NewUrl
+FROM askiiti_askiitians.CMS_UrlMapper victim
+		INNER JOIN askiiti_askiitians.CMS_UrlMapper culprit ON victim.NewUrl = culprit.OldUrl
+
+-- resolution 2 step circular points
+BEGIN TRAN
+
+UPDATE victim
+SET victim.NewUrl = culprit.NewUrl
+FROM askiiti_askiitians.CMS_UrlMapper victim
+		INNER JOIN askiiti_askiitians.CMS_UrlMapper culprit ON victim.NewUrl = culprit.OldUrl
+UPDATE victim
+SET victim.NewUrl = culprit.NewUrl
+FROM askiiti_askiitians.CMS_UrlMapper victim
+		INNER JOIN askiiti_askiitians.CMS_UrlMapper culprit ON victim.NewUrl = culprit.OldUrl
+
+DELETE FROM askiiti_askiitians.CMS_UrlMapper
+WHERE NewUrl = OldUrl
+
+SELECT victim.OldUrl, victim.NewUrl, culprit.NewUrl
+FROM askiiti_askiitians.CMS_UrlMapper victim
+		INNER JOIN askiiti_askiitians.CMS_UrlMapper culprit ON victim.NewUrl = culprit.OldUrl
+
+ROLLBACK
+
+
+9950298198
+Pradhan Jee
+
+
+
